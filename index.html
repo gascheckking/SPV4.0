@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpawnEngine Mesh HUD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="mesh-bg.js" defer></script>
+    <script src="pwa/sw-register.js" defer></script>
+</head>
+<body>
+    <canvas id="meshCanvas"></canvas>
+    <div class="app-shell">
+        <header class="header">
+            <div class="wallet-status">Wallet: Not connected</div>
+            <div class="xp-status">XP: 0 | Streak: 0</div>
+            <div class="alerts">Alerts</div>
+        </header>
+        <main class="hud-main">
+            <section class="luck-engine">
+                <h2>Luck Engine / Pull Lab</h2>
+                <p>Placeholder for pulls</p>
+            </section>
+            <section class="trading-wall">
+                <h2>Trading Wall & Heatmap</h2>
+                <p>Mock realtime chart</p>
+            </section>
+            <section class="mesh-feed">
+                <h2>Live Event Mesh Feed</h2>
+                <ul>
+                    <li>Event 1: Pack opened</li>
+                    <li>Event 2: Whale alert</li>
+                </ul>
+            </section>
+            <section class="quest-summary">
+                <h2>Quests & Streak</h2>
+                <p>Daily streak ring placeholder</p>
+            </section>
+        </main>
+        <nav class="bottom-nav">
+            <button data-tab="hud">HUD</button>
+            <button data-tab="packs">Packs</button>
+            <button data-tab="quests">Quests</button>
+            <button data-tab="bot">Bot</button>
+            <button data-tab="factory">Factory</button>
+            <button data-tab="mesh">Mesh</button>
+        </nav>
+    </div>
+</body>
+</html>
